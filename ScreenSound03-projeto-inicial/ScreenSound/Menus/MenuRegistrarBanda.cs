@@ -22,8 +22,8 @@ internal class MenuRegistrarBanda : Menu
 
         chat.AppendSystemMessage($"Resuma a banda {nomeDaBanda} em 1 paragrafo. Adote um estilo informal.");
 
-        string resposta = chat.GetResponseFromChatbotAsync().GetAwaiter().GetResult();
-        banda.Resumo =(resposta);
+        //string resposta = chat.GetResponseFromChatbotAsync().GetAwaiter().GetResult();
+        //banda.Resumo =(resposta);
 
         bandasRegistradas.Add(nomeDaBanda, banda);
         Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
